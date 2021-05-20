@@ -11,8 +11,11 @@ let g:ale_linters = {
 " these are for formatting
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'python': ['black', 'isort'],
+\   'python': ['black'],
 \   'javascript': ['prettier'],
+\   'javascriptreact': ['prettier'],
+\   'typescript': ['prettier'],
+\   'typescriptreact': ['prettier'],
 \   'css': ['prettier'],
 \}
 
