@@ -23,7 +23,7 @@ Plug 'dense-analysis/ale'
 Plug 'neovim/nvim-lspconfig'
 
 " completion
-Plug 'nvim-lua/completion-nvim'
+" Plug 'nvim-lua/completion-nvim'
 Plug 'hrsh7th/nvim-compe'
 
 " status bar
