@@ -21,6 +21,7 @@ Plug 'dense-analysis/ale'
 
 " native LSP for neovim
 Plug 'neovim/nvim-lspconfig'
+" Plug 'glepnir/lspsaga.nvim'
 
 " completion
 " Plug 'nvim-lua/completion-nvim'
