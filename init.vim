@@ -30,8 +30,9 @@ Plug 'hrsh7th/nvim-compe'
 " status bar
 Plug 'itchyny/lightline.vim'
 
-" gruvbox
+" colorschemes
 Plug 'gruvbox-community/gruvbox'
+Plug 'flazz/vim-colorschemes'
 
 " fantastic fuzzy finder and dependencies
 Plug 'nvim-telescope/telescope.nvim'
@@ -56,6 +57,9 @@ Plug 'maxmellon/vim-jsx-pretty'
 " git stuff
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+
+" indent guides
+Plug 'yggdroot/indentLine'
 
 call plug#end()
 
