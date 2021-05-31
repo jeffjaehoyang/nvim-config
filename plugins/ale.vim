@@ -5,7 +5,8 @@
 let g:ale_linters = {
 \   'javascript': [],
 \   'python': [],
-\   'go': []
+\   'go': [],
+\   'hack': ['hack']
 \}
 
 " these are for formatting

@@ -61,6 +61,9 @@ Plug 'tpope/vim-fugitive'
 " indent guides
 Plug 'yggdroot/indentLine'
 
+" hacklang
+Plug 'hhvm/vim-hack'
+
 call plug#end()
 
 " source vim files
