@@ -21,7 +21,7 @@ Plug 'dense-analysis/ale'
 
 " native LSP for neovim
 Plug 'neovim/nvim-lspconfig'
-" Plug 'glepnir/lspsaga.nvim'
+Plug 'glepnir/lspsaga.nvim'
 
 " completion
 " Plug 'nvim-lua/completion-nvim'
@@ -75,6 +75,7 @@ source ~/.config/nvim/plugins/lsp-config.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/vim-move.vim
+source ~/.config/nvim/plugins/saga.vim
 
 " source lua files
 luafile ~/.config/nvim/lua/lsp-config.lua
