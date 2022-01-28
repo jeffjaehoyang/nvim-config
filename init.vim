@@ -1,3 +1,8 @@
+" (N)Vim Configuration File
+" vim  : place in $HOME/.vimrc
+" nvim : place in $HOME/.config/nvim/init.vim
+" $ ln -s $HOME/.config/nvim/init.vim $HOME/.vimrc
+"
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
@@ -18,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 
 " linting and formatting
 Plug 'dense-analysis/ale'
+Plug 'psf/black', { 'branch': 'stable' }
 
 " native LSP for neovim
 Plug 'neovim/nvim-lspconfig'

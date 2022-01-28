@@ -255,6 +255,9 @@ endtry
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+" autofix with black for python files (on save)
+autocmd BufWritePre *.py execute ':Black'
+
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
