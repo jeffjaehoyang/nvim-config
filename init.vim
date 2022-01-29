@@ -65,7 +65,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " indent guides
-Plug 'yggdroot/indentLine'
+" Plug 'yggdroot/indentLine'
 
 " hacklang
 Plug 'hhvm/vim-hack'
