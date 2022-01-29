@@ -130,10 +130,10 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme gruvbox
-catch
-endtry
+" try
+"   colorscheme gruvbox
+" catch
+" endtry
 
 set background=dark
 
