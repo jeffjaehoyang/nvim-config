@@ -25,6 +25,7 @@ autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
 autocmd FileType python     setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType hack       setlocal shiftwidth=2 tabstop=2
+autocmd FileType c          setlocal shiftwidth=4 tabstop=4
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -130,10 +131,10 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-" try
-"   colorscheme gruvbox
-" catch
-" endtry
+try
+  colorscheme gruvbox
+catch
+endtry
 
 set background=dark
 
