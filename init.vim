@@ -78,6 +78,7 @@ call plug#end()
 
 " source vim files
 source ~/.config/nvim/basics/sets.vim
+source ~/.config/nvim/plugins/colors.vim
 source ~/.config/nvim/plugins/ale.vim
 source ~/.config/nvim/plugins/git-gutter.vim
 source ~/.config/nvim/plugins/lightline.vim
