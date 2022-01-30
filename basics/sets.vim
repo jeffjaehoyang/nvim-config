@@ -26,6 +26,7 @@ autocmd FileType html       setlocal shiftwidth=2 tabstop=2
 autocmd FileType python     setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType hack       setlocal shiftwidth=2 tabstop=2
 autocmd FileType c          setlocal shiftwidth=4 tabstop=4
+autocmd FileType cpp        setlocal shiftwidth=4 tabstop=4
 
 " Set to auto read when a file is changed from the outside
 set autoread
