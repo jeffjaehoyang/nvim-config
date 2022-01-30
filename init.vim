@@ -22,7 +22,9 @@ set wildignore+=**/.git/*
 call plug#begin('~/.vim/plugged')
 
 " linting and formatting
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
+Plug 'sbdchd/neoformat'
+Plug 'deoplete-plugins/deoplete-clang'
 Plug 'psf/black', { 'branch': 'stable' }
 
 " native LSP for neovim
@@ -85,8 +87,9 @@ call plug#end()
 
 " source vim files
 source ~/.config/nvim/basics/sets.vim
-"source ~/.config/nvim/plugins/colors.vim
-source ~/.config/nvim/plugins/ale.vim
+" source ~/.config/nvim/plugins/colors.vim
+" source ~/.config/nvim/plugins/ale.vim
+source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/git-gutter.vim
 source ~/.config/nvim/plugins/lightline.vim
 source ~/.config/nvim/plugins/lsp-config.vim
