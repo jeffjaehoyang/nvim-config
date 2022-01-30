@@ -60,6 +60,9 @@ Plug 'matze/vim-move'
 " jsx syntax highlighting
 Plug 'maxmellon/vim-jsx-pretty'
 
+" c/cpp syntax highlighting
+Plug 'bfrg/vim-cpp-modern'
+
 " git stuff
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
