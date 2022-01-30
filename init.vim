@@ -58,10 +58,14 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'matze/vim-move'
 
 " jsx syntax highlighting
-Plug 'maxmellon/vim-jsx-pretty'
+"Plug 'maxmellon/vim-jsx-pretty'
 
 " c/cpp syntax highlighting
-Plug 'bfrg/vim-cpp-modern'
+"Plug 'bfrg/vim-cpp-modern'
+"
+" a ton of language syntax support loaded on-demand
+Plug 'sheerun/vim-polyglot'
+
 
 " git stuff
 Plug 'airblade/vim-gitgutter'
