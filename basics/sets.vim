@@ -260,6 +260,9 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " autofix with black for python files (on save)
 autocmd BufWritePre *.py execute ':Black'
 
+" block cursor
+set guicursor=i:block
+
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
