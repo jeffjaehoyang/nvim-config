@@ -195,6 +195,8 @@ set wrap "Wrap lines
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
+hi Visual cterm=none ctermbg=darkgrey
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -263,7 +265,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " autocmd BufWritePre *.py execute ':Black'
 
 " block cursor
-set guicursor=i:block
+"set guicursor=i:block
 
 """"""""""""""""""""""""""""""
 " => Status line

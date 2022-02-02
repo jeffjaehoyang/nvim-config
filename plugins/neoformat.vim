@@ -8,12 +8,12 @@ let g:neoformat_enabled_lua = ['luafmt']
 " custom setting for clangformat
 let g:neoformat_c_clangformat = {
     \ 'exe': 'clang-format',
-    \ 'args': ['--style="{IndentWidth: 4, UseTab: Never, BreakBeforeBraces: Allman, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0}"'],
+    \ 'args': ['--style="{IndentWidth: 4, UseTab: Never, BreakBeforeBraces: Allman, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 120}"'],
 \}
 
 let g:neoformat_cpp_clangformat = {
     \ 'exe': 'clang-format',
-    \ 'args': ['--style="{IndentWidth: 4, UseTab: Never, BreakBeforeBraces: Allman, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0}"'],
+    \ 'args': ['--style="{IndentWidth: 4, UseTab: Never, BreakBeforeBraces: Allman, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 120}"'],
 \}
 
 let g:neoformat_enabled_cpp = ['clangformat']

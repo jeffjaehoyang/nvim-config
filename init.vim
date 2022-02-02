@@ -24,10 +24,7 @@ set wildignore+=**/.git/*
 call plug#begin('~/.vim/plugged')
 
 " linting and formatting
-" Plug 'dense-analysis/ale'
-" Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'sbdchd/neoformat'
-"Plug 'deoplete-plugins/deoplete-clang'
 Plug 'psf/black', { 'branch': 'stable' }
 
 " native LSP for neovim
@@ -67,15 +64,8 @@ Plug 'jiangmiao/auto-pairs'
 " cool movement
 Plug 'matze/vim-move'
 
-" jsx syntax highlighting
-"Plug 'maxmellon/vim-jsx-pretty'
-
-" c/cpp syntax highlighting
-"Plug 'bfrg/vim-cpp-modern'
-"
 " a ton of language syntax support loaded on-demand
 Plug 'sheerun/vim-polyglot'
-
 
 " git stuff
 Plug 'airblade/vim-gitgutter'
@@ -98,15 +88,15 @@ call plug#end()
 
 " source vim files
 source ~/.config/nvim/basics/sets.vim
-"source ~/.config/nvim/plugins/colors.vim
-" source ~/.config/nvim/plugins/ale.vim
 source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/git-gutter.vim
 source ~/.config/nvim/plugins/lightline.vim
-source ~/.config/nvim/plugins/lsp-config.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/vim-move.vim
+" source ~/.config/nvim/plugins/ale.vim
+"source ~/.config/nvim/plugins/lsp-config.vim
+"source ~/.config/nvim/plugins/colors.vim
 " source ~/.config/nvim/plugins/saga.vim
 
 
