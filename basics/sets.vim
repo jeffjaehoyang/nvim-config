@@ -151,9 +151,6 @@ if has("gui_running")
 endif
 
 hi DiagnosticError guifg=Red
-hi DiagnosticWarn  guifg=DarkOrange
-hi DiagnosticInfo  guifg=Blue
-hi DiagnosticHint  guifg=Green
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
