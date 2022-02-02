@@ -6,7 +6,9 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
+" hello front end masters
 set path+=**
+
 " Nice menu when typing `:find *.py`
 set wildmode=longest,list,full
 set wildmenu
@@ -23,8 +25,9 @@ call plug#begin('~/.vim/plugged')
 
 " linting and formatting
 " Plug 'dense-analysis/ale'
+" Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'sbdchd/neoformat'
-Plug 'deoplete-plugins/deoplete-clang'
+"Plug 'deoplete-plugins/deoplete-clang'
 Plug 'psf/black', { 'branch': 'stable' }
 
 " native LSP for neovim
@@ -33,7 +36,12 @@ Plug 'glepnir/lspsaga.nvim'
 
 " completion
 " Plug 'nvim-lua/completion-nvim'
-Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
 
 " status bar
 Plug 'itchyny/lightline.vim'
@@ -82,12 +90,15 @@ Plug 'hhvm/vim-hack'
 " tree-sitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-
 call plug#end()
+
+""""""""""""""""""""""
+" source files
+""""""""""""""""""""""
 
 " source vim files
 source ~/.config/nvim/basics/sets.vim
-" source ~/.config/nvim/plugins/colors.vim
+"source ~/.config/nvim/plugins/colors.vim
 " source ~/.config/nvim/plugins/ale.vim
 source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/git-gutter.vim
@@ -96,8 +107,11 @@ source ~/.config/nvim/plugins/lsp-config.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/vim-move.vim
-source ~/.config/nvim/plugins/saga.vim
+" source ~/.config/nvim/plugins/saga.vim
+
 
 " source lua files
-luafile ~/.config/nvim/lua/lsp-config.lua
-luafile ~/.config/nvim/lua/compe-config.lua
+" lua require("null-ls")
+lua require("lsp-config")
+lua require("nvim-cmp")
+

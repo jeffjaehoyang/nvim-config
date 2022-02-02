@@ -150,6 +150,11 @@ if has("gui_running")
     set guitablabel=%M\ %t
 endif
 
+hi DiagnosticError guifg=Red
+hi DiagnosticWarn  guifg=DarkOrange
+hi DiagnosticInfo  guifg=Blue
+hi DiagnosticHint  guifg=Green
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -258,7 +263,7 @@ endtry
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " autofix with black for python files (on save)
-autocmd BufWritePre *.py execute ':Black'
+" autocmd BufWritePre *.py execute ':Black'
 
 " block cursor
 set guicursor=i:block
