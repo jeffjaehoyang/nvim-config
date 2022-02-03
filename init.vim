@@ -6,7 +6,6 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
-" hello front end masters
 set path+=**
 
 " Nice menu when typing `:find *.py`
@@ -32,7 +31,6 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 
 " completion
-" Plug 'nvim-lua/completion-nvim'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -71,9 +69,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" indent guides
-" Plug 'yggdroot/indentLine'
-
 " hacklang
 Plug 'hhvm/vim-hack'
 
@@ -90,7 +85,7 @@ call plug#end()
 """"""""""""""""""""""
 
 " source vim files
-source ~/.config/nvim/basics/sets.vim
+source ~/.config/nvim/plugins/base.vim
 source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/git-gutter.vim
 source ~/.config/nvim/plugins/lightline.vim
@@ -99,13 +94,12 @@ source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/vim-move.vim
 source ~/.config/nvim/plugins/harpoon.vim
 " source ~/.config/nvim/plugins/ale.vim
-"source ~/.config/nvim/plugins/lsp-config.vim
-"source ~/.config/nvim/plugins/colors.vim
+" source ~/.config/nvim/plugins/lsp-config.vim
+" source ~/.config/nvim/plugins/colors.vim
 " source ~/.config/nvim/plugins/saga.vim
 
 
 " source lua files
-" lua require("null-ls")
 lua require("lsp-config")
 lua require("nvim-cmp")
 
