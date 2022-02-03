@@ -84,17 +84,19 @@ for _, sign in ipairs(signs) do
 end
 
 local diagnostics_config = {
-    --virtual_text = true,
     virtual_text = {
         spacing = 4,
-        --prefix = "⬢ ",
-        prefix = "⬣ "
+        --prefix = "⬢ "
+        source = true,
+        prefix = "✹ "
+        --prefix = "⬣ ",
+        --prefix = "» "
     },
     -- show signs
     signs = {
         active = signs
     },
-    update_in_insert = true,
+    update_in_insert = false,
     underline = false,
     severity_sort = true,
     float = {
