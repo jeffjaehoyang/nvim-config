@@ -12,7 +12,6 @@ set colorcolumn=80
 set scrolloff=8
 set cmdheight=1
 set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
 set nowrap
 set noswapfile
 set nobackup
@@ -32,7 +31,6 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=L
-set background=dark
 set encoding=utf8
 set ffs=unix,dos,mac
 set expandtab
@@ -48,14 +46,28 @@ set si "Smart indent
 set splitbelow splitright
 set guicursor=i:block
 set updatetime=50
+set shortmess+=c
 
 try
   colorscheme gruvbox
 catch
 endtry
 
+let g:gruvbox_contrast_dark = 'hard'
+
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
+let g:gruvbox_invert_selection='0'
+set background=dark
+
 " if you want to do stuff like setting background images
 hi Normal ctermbg=NONE
+
+" lsp diagnostics error text color
+hi DiagnosticError guifg=Red
 
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
