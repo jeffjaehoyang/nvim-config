@@ -88,7 +88,7 @@ local diagnostics_config = {
         spacing = 4,
         --prefix = "⬢ "
         source = true,
-        prefix = "✹ "
+        prefix = "■ "
         --prefix = "⬣ ",
         --prefix = "» "
     },

@@ -265,7 +265,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " autocmd BufWritePre *.py execute ':Black'
 
 " block cursor
-"set guicursor=i:block
+set guicursor=i:block
 
 """"""""""""""""""""""""""""""
 " => Status line
