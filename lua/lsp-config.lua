@@ -96,8 +96,8 @@ local diagnostics_config = {
     signs = {
         active = signs
     },
-    update_in_insert = false,
-    underline = false,
+    update_in_insert = true,
+    underline = true,
     severity_sort = true,
     float = {
         focus = false,
