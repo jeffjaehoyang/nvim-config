@@ -78,6 +78,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " harpoon
 Plug 'ThePrimeagen/harpoon'
 
+" leetcode!!!
+Plug 'ianding1/leetcode.vim'
+
 call plug#end()
 
 """"""""""""""""""""""
@@ -93,6 +96,7 @@ source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/vim-move.vim
 source ~/.config/nvim/plugins/harpoon.vim
+source ~/.config/nvim/plugins/leetcode.vim
 " source ~/.config/nvim/plugins/ale.vim
 " source ~/.config/nvim/plugins/lsp-config.vim
 " source ~/.config/nvim/plugins/colors.vim
