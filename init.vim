@@ -39,7 +39,10 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
 " status bar
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Plug 'itchyny/lightline.vim'
 
 " colorschemes
 Plug 'gruvbox-community/gruvbox'
@@ -91,7 +94,7 @@ call plug#end()
 source ~/.config/nvim/plugins/base.vim
 source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/git-gutter.vim
-source ~/.config/nvim/plugins/lightline.vim
+source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/vim-move.vim
