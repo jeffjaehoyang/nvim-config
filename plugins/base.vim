@@ -53,6 +53,12 @@ try
 catch
 endtry
 
+try
+  set switchbuf=useopen,usetab,newtab
+  set stal=2
+catch
+endtry
+
 let g:gruvbox_contrast_dark = 'hard'
 
 if exists('+termguicolors')
