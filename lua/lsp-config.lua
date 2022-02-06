@@ -86,7 +86,9 @@ end
 local diagnostics_config = {
     virtual_text = {
         spacing = 4,
-        prefix = "■ "
+        -- prefix = "■ "
+        -- prefix = "➠ ",
+        prefix = "⚈ "
     },
     -- show signs
     signs = {

@@ -39,10 +39,8 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
 " status bar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" Plug 'itchyny/lightline.vim'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " colorschemes
 Plug 'gruvbox-community/gruvbox'
@@ -94,12 +92,12 @@ call plug#end()
 source ~/.config/nvim/plugins/base.vim
 source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/git-gutter.vim
-source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/vim-move.vim
 source ~/.config/nvim/plugins/harpoon.vim
 source ~/.config/nvim/plugins/leetcode.vim
+source ~/.config/nvim/plugins/tabline.vim
 " source ~/.config/nvim/plugins/ale.vim
 " source ~/.config/nvim/plugins/lsp-config.vim
 " source ~/.config/nvim/plugins/colors.vim
@@ -109,4 +107,5 @@ source ~/.config/nvim/plugins/leetcode.vim
 " source lua files
 lua require("lsp-config")
 lua require("nvim-cmp")
+lua require("lua-line")
 

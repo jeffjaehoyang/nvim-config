@@ -6,5 +6,5 @@
   nnoremap <leader>3 :lua require("harpoon.ui").nav_file(3)<CR>
   nnoremap <leader>4 :lua require("harpoon.ui").nav_file(4)<CR>
   nnoremap <leader>md :lua require("harpoon.mark").clear_all()<CR>
-  "nnoremap <S-l> :lua require("harpoon.ui").nav_next()
-  "nnoremap <S-j> :lua require("harpoon.ui").nav_prev()
+  nnoremap <S-l> :lua require("harpoon.ui").nav_next()<CR>
+  nnoremap <S-j> :lua require("harpoon.ui").nav_prev()<CR>
