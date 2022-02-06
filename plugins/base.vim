@@ -16,7 +16,6 @@ set nowrap
 set noswapfile
 set nobackup
 set nowb
-set nohlsearch
 set hidden
 set incsearch
 set lazyredraw
