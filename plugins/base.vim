@@ -43,7 +43,7 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set splitbelow splitright
-set guicursor=i:block
+" set guicursor=i:block
 set updatetime=50
 set shortmess+=c
 
@@ -108,13 +108,13 @@ noremap <silent> <S-Right> :vertical resize -3<CR>
 noremap <silent> <S-Up> :resize +3<CR>
 noremap <silent> <S-Down> :resize -3<CR>
 
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
-map <leader>ba :bufdo bd<cr>
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-map <leader>t<leader> :tabnext
+" map <leader>bd :Bclose<cr>:tabclose<cr>gT
+" map <leader>ba :bufdo bd<cr>
+" map <leader>tn :tabnew<cr>
+" map <leader>to :tabonly<cr>
+" map <leader>tc :tabclose<cr>
+" map <leader>tm :tabmove
+" map <leader>t<leader> :tabnext
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
