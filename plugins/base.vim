@@ -92,7 +92,7 @@ endif
 hi Visual cterm=none ctermbg=darkgrey
 
 " Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+" map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
 map <Tab>j <C-W>j

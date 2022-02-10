@@ -3,4 +3,4 @@
 
 let g:gitgutter_enabled = 1
 let g:gitgutter_preview_win_floating = 0
-nnoremap <silent> <leader>d :GitGutterToggle<cr>
+nnoremap <silent> <leader>g :GitGutterToggle<cr>
