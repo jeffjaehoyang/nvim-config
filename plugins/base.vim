@@ -42,10 +42,12 @@ set lbr
 set tw=500
 set ai "Auto indent
 set si "Smart indent
-set splitbelow splitright
+" set splitbelow
+set splitright
 " set guicursor=i:block
 set updatetime=50
 set shortmess+=c
+set tabline=
 
 try
   colorscheme gruvbox
@@ -99,8 +101,8 @@ map <Tab>h <C-W>h
 map <Tab>l <C-W>l
 
 " Change 2 split windows from vert to horiz or horiz to vert
-map <Leader>th <C-w>t<C-w>H
-map <Leader>tk <C-w>t<C-w>K
+map <leader>tk <C-w>t<C-w>H
+map <leader>th <C-w>t<C-w>K
 
 " Make adjusing split sizes a bit more friendly
 noremap <silent> <S-Left> :vertical resize +3<CR>
@@ -108,7 +110,14 @@ noremap <silent> <S-Right> :vertical resize -3<CR>
 noremap <silent> <S-Up> :resize +3<CR>
 noremap <silent> <S-Down> :resize -3<CR>
 
-" map <leader>bd :Bclose<cr>:tabclose<cr>gT
+" Greatest buffer remaps evuhhh
+nnoremap gb :ls<CR>:b<Space>
+nnoremap <leader>vs :ls<cr>:vsp<space>\|<space>b<space>
+nnoremap <leader>s :ls<cr>:sp<space>\|<space>b<space>
+nnoremap <leader>bd :bd<cr>
+
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+
 " map <leader>ba :bufdo bd<cr>
 " map <leader>tn :tabnew<cr>
 " map <leader>to :tabonly<cr>

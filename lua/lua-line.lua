@@ -1,5 +1,5 @@
 local function HiJeff()
-    return [[Happy Coding, Jeff!]]
+    return [[Jeff the Jeff]]
 end
 
 require("lualine").setup {
